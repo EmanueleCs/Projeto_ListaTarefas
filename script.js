@@ -81,7 +81,7 @@ function editarTarefa(i) {
         tarefas[i] = tarefaEditada
         renderizarTarefas()
     }
-
+    mensagem.textContent = "Tarefa editada com sucesso!"
 }
 
 function limparLista(){
@@ -90,6 +90,7 @@ function limparLista(){
 
     mensagem.textContent = "Lista de tarefas limpa com sucesso!"
     removerBotaoLimparLista()
+    mensagem.textContent = ""
 }
 
 function removerBotaoLimparLista() {
